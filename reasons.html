@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why I Love You 💗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ♡ OUR STORY
+        </div>
+
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="memories.html">Memories</a>
+            <a href="reasons.html">Reasons</a>
+            <a href="letter.html">Letter</a>
+            <a href="question.html">Question</a>
+        </div>
+
+    </nav>
+
+
+    <main class="page">
+
+        <div class="page-heading">
+
+            <p>THERE ARE SO MANY...</p>
+
+            <h1>
+                Reasons Why I <span>Love You</span> 💗
+            </h1>
+
+            <p>Click each one.</p>
+
+        </div>
+
+
+        <section class="reasons-grid">
+
+            <button onclick="showReason(1)" class="reason-card">
+                <span>01</span>
+                <h2>Your Smile</h2>
+                <p>Click me ♡</p>
+            </button>
+
+            <button onclick="showReason(2)" class="reason-card">
+                <span>02</span>
+                <h2>Your Patience</h2>
+                <p>Click me ♡</p>
+            </button>
+
+            <button onclick="showReason(3)" class="reason-card">
+                <span>03</span>
+                <h2>Your Effort</h2>
+                <p>Click me ♡</p>
+            </button>
+
+            <button onclick="showReason(4)" class="reason-card">
+                <span>04</span>
+                <h2>Your Kindness</h2>
+                <p>Click me ♡</p>
+            </button>
+
+            <button onclick="showReason(5)" class="reason-card">
+                <span>05</span>
+                <h2>The Way You Care</h2>
+                <p>Click me ♡</p>
+            </button>
+
+            <button onclick="showReason(6)" class="reason-card">
+                <span>06</span>
+                <h2>Simply You</h2>
+                <p>Click me ♡</p>
+            </button>
+
+        </section>
+
+
+        <div class="funny-box">
+
+            <h2>Okay, fine... 😂</h2>
+
+            <p>
+                There's actually one more reason.
+            </p>
+
+            <button onclick="showFunny()" class="main-button">
+                Reveal It
+            </button>
+
+        </div>
+
+
+        <div class="page-navigation">
+
+            <a href="memories.html" class="secondary-button">
+                ← Memories
+            </a>
+
+            <a href="letter.html" class="main-button">
+                Read My Letter →
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <div class="popup" id="reasonPopup">
+
+        <div class="popup-box">
+
+            <button class="close-popup" onclick="closePopup()">
+                ×
+            </button>
+
+            <div id="popupHeart">💗</div>
+
+            <h2 id="popupTitle"></h2>
+
+            <p id="popupText"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- MUSIC -->
+    <audio id="bgMusic" loop preload="auto">
+        <source src="music/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-button" id="musicButton" onclick="toggleMusic()">
+        🎵 Play Music
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
